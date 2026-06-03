@@ -72,11 +72,122 @@
     ]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+[data-brand="future-flow"] {
+  --brand-primary: #0066CC;
+  --brand-secondary: #00FF00;
+  --brand-accent: #00FF00;
+  --brand-bg: #0A0A1A;
+  --brand-text: #E0E0E0;
+  --brand-muted: #666666;
+  --brand-font-heading: 'Courier New', Courier, monospace;
+  --brand-font-body: 'Courier New', Courier, monospace;
+  --brand-border: #00FF00;
+  --brand-radius: 4px;
+}
+
+[data-brand="future-flow"] h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0066CC;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+[data-brand="future-flow"] h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0066CC;
+  line-height: 1.3;
+}
+
+[data-brand="future-flow"] h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #00FF00;
+  line-height: 1.4;
+}
+
+[data-brand="future-flow"] p,
+[data-brand="future-flow"] li {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.975rem;
+  font-weight: 400;
+  color: #E0E0E0;
+  line-height: 1.7;
+}
+
+.brand-card {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-radius);
+  padding: 1.5rem;
+}
+
+.brand-btn {
+  background: var(--brand-primary);
+  color: var(--brand-bg);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--brand-radius);
+  font-family: var(--brand-font-body);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.brand-btn:hover { opacity: 0.9; }
+
+.brand-heading {
+  font-family: var(--brand-font-heading);
+  color: var(--brand-primary);
+  line-height: 1.2;
+}
+
+.brand-link {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-accent);
+}
+
+.brand-muted { color: var(--brand-muted); }
+
+.brand-accent { color: var(--brand-accent); }
+
+.brand-post {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-radius);
+  padding: 1.25rem;
+  font-family: var(--brand-font-body);
+  max-width: 600px;
+}
+
+.brand-post h3 {
+  font-family: var(--brand-font-heading);
+  color: var(--brand-primary);
+  margin: 0 0 0.5rem;
+}
+
+.brand-post .meta {
+  color: var(--brand-muted);
+  font-size: 0.8rem;
+}
+
+.brand-hashtag {
+  color: var(--brand-primary);
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, sans-serif; color: #0066CC; background: #0A0A1A; }
+    body { font-family: var(--brand-font-body), monospace; color: var(--brand-text); background: var(--brand-bg); }
+    h1, h2, h3, .tagline, nav a, .badge, .btn { font-family: var(--brand-font-heading); }
     .hero {
       min-height: 100vh;
       display: flex;
@@ -201,7 +312,7 @@
     }
   </style>
 </head>
-<body>
+<body data-brand="future-flow">
   <nav>
     <a href="#">AI</a><a href="#">Tech</a><a href="#">Future</a>
   </nav>
