@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FUTURE FLOW | Agency | Halalisanin/future-flow</title>
-  <meta name="description" content="Ideas made real.">
-  <meta name="keywords" content="emerging technology, AI breakthroughs, digital innovation, future tech, artificial intelligence insights, tech news daily, future flow">
+  <title>Future Flow — Ideas Made Real</title>
+  <meta name="description" content="Future Flow brings ideas to life through strategy, design and content. Daily coverage of AI breakthroughs, emerging tech, and the digital frontier.">
+  <meta name="keywords" content="emerging technology, AI breakthroughs, digital innovation, future tech, artificial intelligence insights, tech news, future flow">
   <meta name="author" content="Future-Flow Media">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://future-flow.media/">
-  <meta property="og:title" content="FUTURE FLOW | Agency | Halalisanin/future-flow">
-  <meta property="og:description" content="Ideas made real.">
+  <meta property="og:title" content="Future Flow — Ideas Made Real">
+  <meta property="og:description" content="Future Flow brings ideas to life through strategy, design and content. Daily coverage of AI breakthroughs, emerging tech, and the digital frontier.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80">
   <meta property="og:url" content="https://future-flow.media/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Future-Flow">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FUTURE FLOW | Agency | Halalisanin/future-flow">
-  <meta name="twitter:description" content="Ideas made real.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80">
+  <meta name="twitter:title" content="Future Flow — Ideas Made Real">
+  <meta name="twitter:description" content="Future Flow brings ideas to life through strategy, design and content.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,497 +72,1085 @@
   }
   </script>
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
 
-[data-brand="future-flow"] {
-  --brand-primary: #0EA5E9;
-  --brand-secondary: #10B981;
-  --brand-accent: #10B981;
-  --brand-bg: #0A0E17;
-  --brand-text: #F0F0F0;
-  --brand-muted: #64748B;
-  --brand-font-heading: 'Space Grotesk', 'Courier New', Courier, monospace;
-  --brand-font-body: 'Space Grotesk', 'Courier New', Courier, monospace;
-  --brand-border: rgba(14,165,233,0.3);
-  --brand-radius: 8px;
-}
+    :root {
+      --bg-primary: #0B1120;
+      --bg-secondary: #111827;
+      --bg-card: rgba(255,255,255,0.03);
+      --text-primary: #F8FAFC;
+      --text-secondary: rgba(248,250,252,0.7);
+      --text-muted: rgba(248,250,252,0.4);
+      --accent-green: #22C55E;
+      --accent-blue: #0EA5E9;
+      --accent-cyan: #06B6D4;
+      --border-color: rgba(34,197,94,0.15);
+      --border-hover: rgba(34,197,94,0.35);
+      --glow-green: rgba(34,197,94,0.25);
+      --glow-blue: rgba(14,165,233,0.2);
+      --font-heading: 'Exo', 'Courier New', monospace;
+      --font-body: 'Roboto Mono', 'Courier New', monospace;
+      --nav-height: 64px;
+      --z-nav: 100;
+      --z-overlay: 50;
+      --transition-fast: 150ms;
+      --transition-base: 250ms;
+      --transition-slow: 400ms;
+    }
 
-[data-brand="future-flow"] h1 {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #0EA5E9;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-[data-brand="future-flow"] h2 {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0EA5E9;
-  line-height: 1.3;
-}
+    html { scroll-behavior: smooth; }
 
-[data-brand="future-flow"] h3 {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #10B981;
-  line-height: 1.4;
-}
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
 
-[data-brand="future-flow"] p,
-[data-brand="future-flow"] li {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-  font-size: 0.975rem;
-  font-weight: 400;
-  color: #F0F0F0;
-  line-height: 1.7;
-}
+    ::selection {
+      background: var(--accent-green);
+      color: var(--bg-primary);
+    }
 
-.brand-card {
-  background: var(--brand-bg);
-  color: var(--brand-text);
-  border: 1px solid var(--brand-border);
-  border-radius: var(--brand-radius);
-  padding: 1.5rem;
-}
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-green); border-radius: 3px; }
 
-.brand-btn {
-  background: var(--brand-primary);
-  color: var(--brand-bg);
-  border: none;
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--brand-radius);
-  font-family: var(--brand-font-body);
-  font-size: 0.875rem;
-  cursor: pointer;
-}
+    /* ====== UTILITY ====== */
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-.brand-btn:hover { opacity: 0.9; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); border: 0;
+    }
 
-.brand-heading {
-  font-family: var(--brand-font-heading);
-  color: var(--brand-primary);
-  line-height: 1.2;
-}
+    /* ====== NAV ====== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      z-index: var(--z-nav);
+      background: rgba(11,17,32,0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      transition: border-color var(--transition-base);
+    }
 
-.brand-link {
-  color: var(--brand-primary);
-  text-decoration: underline;
-  text-decoration-color: var(--brand-accent);
-}
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
 
-.brand-muted { color: var(--brand-muted); }
+    .nav-logo span { color: var(--accent-green); }
 
-.brand-accent { color: var(--brand-accent); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-.brand-post {
-  background: var(--brand-bg);
-  color: var(--brand-text);
-  border: 1px solid var(--brand-border);
-  border-radius: var(--brand-radius);
-  padding: 1.25rem;
-  font-family: var(--brand-font-body);
-  max-width: 600px;
-}
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color var(--transition-fast);
+      position: relative;
+      padding: 0.25rem 0;
+    }
 
-.brand-post h3 {
-  font-family: var(--brand-font-heading);
-  color: var(--brand-primary);
-  margin: 0 0 0.5rem;
-}
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--accent-green);
+      transition: width var(--transition-base);
+    }
 
-.brand-post .meta {
-  color: var(--brand-muted);
-  font-size: 0.8rem;
-}
+    .nav-links a:hover { color: var(--accent-green); }
+    .nav-links a:hover::after { width: 100%; }
 
-.brand-hashtag {
-  color: var(--brand-primary);
-  opacity: 0.8;
-  font-size: 0.8rem;
-}
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 1.1rem;
+      background: var(--accent-green);
+      color: var(--bg-primary);
+      text-decoration: none;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 6px;
+      transition: opacity var(--transition-fast), transform var(--transition-fast);
+      cursor: pointer;
+    }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+    .nav-cta:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
 
-body {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-  color: #F0F0F0;
-  background: #0A0E17;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    .nav-mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 0.4rem;
+    }
 
-h1, h2, h3, .tagline, nav a, .badge, .btn {
-  font-family: 'Space Grotesk', 'Courier New', Courier, monospace;
-}
+    /* ====== HERO ====== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 1.5rem 4rem;
+      background:
+        radial-gradient(ellipse at 15% 40%, rgba(14,165,233,0.1) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 60%, rgba(34,197,94,0.08) 0%, transparent 55%),
+        var(--bg-primary);
+    }
 
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(14,165,233,0.35), rgba(16,185,129,0.08), rgba(10,14,23,0.9)),
-    radial-gradient(ellipse at 20% 50%, rgba(14,165,233,0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 50%, rgba(16,185,129,0.1) 0%, transparent 60%),
-    #0A0E17;
-}
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(34,197,94,0.02) 1px, rgba(34,197,94,0.02) 2px),
+        repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(34,197,94,0.02) 1px, rgba(34,197,94,0.02) 2px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+    }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(14,165,233,0.03) 40px, rgba(14,165,233,0.03) 41px),
-    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(14,165,233,0.03) 40px, rgba(14,165,233,0.03) 41px);
-  pointer-events: none;
-}
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+      opacity: 0.4;
+    }
 
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  padding: 1.5rem 2rem;
-  z-index: 10;
-  background: rgba(10,14,23,0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(14,165,233,0.1);
-}
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(34,197,94,0.03) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(34,197,94,0.03) 1px, transparent 1px);
+      background-size: 80px 80px;
+      pointer-events: none;
+    }
 
-nav a {
-  color: rgba(240,240,240,0.7);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: color 0.3s;
-  position: relative;
-}
+    .hero-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+    }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #10B981;
-  transition: width 0.3s;
-}
+    .hero-glow--green {
+      top: 20%;
+      left: -10%;
+      background: rgba(34,197,94,0.08);
+    }
 
-nav a:hover {
-  color: #10B981;
-}
+    .hero-glow--blue {
+      bottom: 20%;
+      right: -10%;
+      background: rgba(14,165,233,0.06);
+    }
 
-nav a:hover::after {
-  width: 100%;
-}
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      animation: heroFadeIn 1s ease-out forwards;
+    }
 
-.hero-content {
-  max-width: 720px;
-  position: relative;
-  z-index: 1;
-}
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-.badge {
-  display: inline-block;
-  background: rgba(16,185,129,0.15);
-  color: #10B981;
-  padding: 0.35rem 1.1rem;
-  border-radius: 100px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(16,185,129,0.25);
-  box-shadow: 0 0 20px rgba(16,185,129,0.2);
-}
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(34,197,94,0.1);
+      color: var(--accent-green);
+      border: 1px solid rgba(34,197,94,0.2);
+      margin-bottom: 1.75rem;
+      animation: badgePulse 3s ease-in-out infinite;
+    }
 
-h1 {
-  font-size: clamp(2.2rem, 6vw, 4rem);
-  font-weight: 700;
-  color: #F0F0F0;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
+    @keyframes badgePulse {
+      0%, 100% { box-shadow: 0 0 10px rgba(34,197,94,0.1); }
+      50% { box-shadow: 0 0 25px rgba(34,197,94,0.25); }
+    }
 
-.tagline {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: #0EA5E9;
-  font-weight: 500;
-  margin-bottom: 1.25rem;
-}
+    .hero-badge-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      animation: dotPulse 1.5s ease-in-out infinite;
+    }
 
-.desc {
-  font-size: 1rem;
-  color: rgba(240,240,240,0.8);
-  line-height: 1.7;
-  margin-bottom: 2.25rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    @keyframes dotPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
 
-.btn {
-  display: inline-block;
-  padding: 0.9rem 2.5rem;
-  background: #10B981;
-  color: #0A0E17;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 30px rgba(16,185,129,0.3);
-}
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+    }
 
-.btn:hover {
-  opacity: 0.95;
-  transform: translateY(-2px);
-  box-shadow: 0 0 45px rgba(16,185,129,0.45);
-}
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-green) 50%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-.section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 5rem 2rem;
-}
+    .hero p {
+      font-family: var(--font-body);
+      font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+      color: var(--text-secondary);
+      max-width: 580px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
 
-.section h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: #0EA5E9;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
-.section h3 {
-  font-size: 1.2rem;
-  color: #F0F0F0;
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    }
 
-.section p, .section li {
-  color: rgba(240,240,240,0.75);
-  line-height: 1.7;
-}
+    .btn--primary {
+      background: var(--accent-green);
+      color: var(--bg-primary);
+      box-shadow: 0 0 30px rgba(34,197,94,0.25);
+    }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2.5rem;
-}
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 45px rgba(34,197,94,0.4);
+    }
 
-.feature-card {
-  background: rgba(255,255,255,0.04);
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid rgba(14,165,233,0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 0 20px rgba(14,165,233,0.06);
-  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
+    .btn--secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
 
-.feature-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(14,165,233,0.35);
-  box-shadow: 0 0 35px rgba(14,165,233,0.15);
-}
+    .btn--secondary:hover {
+      border-color: var(--accent-green);
+      background: rgba(34,197,94,0.06);
+      transform: translateY(-2px);
+    }
 
-.feature-card h3 {
-  color: #0EA5E9;
-  font-weight: 600;
-}
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
 
-.feature-card p {
-  color: rgba(240,240,240,0.7);
-}
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
 
-.faq-list {
-  max-width: 800px;
-  margin: 2.5rem auto 0;
-}
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
 
-.faq-item {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(14,165,233,0.1);
-  transition: border-color 0.2s;
-}
+    .hero-scroll-line {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--accent-green), transparent);
+    }
 
-.faq-item:hover {
-  border-color: rgba(14,165,233,0.2);
-}
+    /* ====== COVERAGE ====== */
+    .coverage {
+      padding: 6rem 0;
+      position: relative;
+    }
 
-.faq-item:last-child { border-bottom: none; }
+    .coverage::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
 
-.faq-item h3 {
-  cursor: default;
-  color: #F0F0F0;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
+    .section-label {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-green);
+      margin-bottom: 0.75rem;
+    }
 
-.faq-item p {
-  color: rgba(240,240,240,0.65);
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
 
-.social-posts {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
+    .section-subtitle {
+      font-family: var(--font-body);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      max-width: 560px;
+      line-height: 1.7;
+    }
 
-.social-post {
-  background: rgba(255,255,255,0.04);
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid rgba(14,165,233,0.12);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 0 15px rgba(14,165,233,0.05);
-  transition: transform 0.3s, border-color 0.3s;
-}
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
 
-.social-post:hover {
-  transform: translateY(-3px);
-  border-color: rgba(16,185,129,0.25);
-}
+    .feature-card {
+      padding: 2rem;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
 
-.social-post h3 {
-  color: #10B981;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
 
-.social-post p {
-  color: rgba(240,240,240,0.7);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      box-shadow: 0 0 40px rgba(34,197,94,0.08);
+    }
 
-footer {
-  text-align: center;
-  padding: 2.5rem 2rem;
-  border-top: 1px solid rgba(14,165,233,0.08);
-  color: rgba(100,116,139,0.7);
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-}
+    .feature-card:hover::before { opacity: 1; }
 
-@media (max-width: 600px) {
-  nav {
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  .hero {
-    padding: 1.5rem;
-  }
-  .section {
-    padding: 3rem 1.5rem;
-  }
-  .social-posts {
-    padding: 0 1.5rem 3rem;
-    grid-template-columns: 1fr;
-  }
-}
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border-color);
+      background: rgba(34,197,94,0.06);
+    }
+
+    .feature-icon svg {
+      width: 20px;
+      height: 20px;
+      color: var(--accent-green);
+    }
+
+    .feature-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    /* ====== STATS ====== */
+    .stats {
+      padding: 4rem 0;
+      position: relative;
+    }
+
+    .stats::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ====== SOCIAL PROOF ====== */
+    .social {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .social::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+
+    .social-card {
+      padding: 1.75rem;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid rgba(14,165,233,0.12);
+      transition: transform var(--transition-base), border-color var(--transition-base);
+      cursor: default;
+    }
+
+    .social-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(14,165,233,0.25);
+    }
+
+    .social-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .social-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--bg-primary);
+    }
+
+    .social-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .social-handle {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .social-card p {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .social-card-footer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    /* ====== FAQ ====== */
+    .faq {
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .faq::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 3rem auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-color);
+      transition: border-color var(--transition-base);
+    }
+
+    .faq-item:last-child { border-bottom: none; }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-align: left;
+      transition: color var(--transition-fast);
+    }
+
+    .faq-question:hover { color: var(--accent-green); }
+
+    .faq-question svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      color: var(--accent-green);
+      transition: transform var(--transition-base);
+    }
+
+    .faq-item.open .faq-question svg {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition-slow), opacity var(--transition-base);
+      opacity: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    .faq-answer p {
+      padding: 0 0 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ====== CTA ====== */
+    .cta-section {
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-green), transparent);
+    }
+
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
+
+    .cta-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(34,197,94,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-section h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .cta-section p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    footer .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.72rem;
+      transition: color var(--transition-fast);
+    }
+
+    footer .footer-links a:hover { color: var(--accent-green); }
+
+    /* ====== SCROLL ANIMATIONS ====== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-cta { display: none; }
+      .nav-mobile-toggle { display: block; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0; right: 0;
+        background: rgba(11,17,32,0.96);
+        backdrop-filter: blur(16px);
+        padding: 1.5rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+
+      .features-grid { grid-template-columns: 1fr; }
+      .social-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 5rem 1rem 3rem; }
+      .container { padding: 0 1rem; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+
+    /* ====== REDUCED MOTION ====== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+      .hero-content { animation: none; opacity: 1; transform: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
   </style>
 </head>
-<body data-brand="future-flow">
-  <nav>
-    <a href="#">AI</a><a href="#">Tech</a><a href="#">Future</a>
+<body>
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo">future<span>.</span>flow</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#social">Community</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#" class="nav-cta" aria-label="Subscribe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Subscribe
+    </a>
+    <button class="nav-mobile-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </nav>
-  <section class="hero">
+
+  <section class="hero" aria-label="Hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow hero-glow--green"></div>
+    <div class="hero-glow hero-glow--blue"></div>
     <div class="hero-content">
-      <div class="badge">Ideas made real.</div>
-      <p class="tagline">Ideas made real.</p>
-      <h1 class="glow">Ideas made real<br class="hide-mobile"></h1>
-      <p class="desc">Future Flow brings ideas to life through strategy, design and content. We help brands tell real stories that connect.</p>
-      <a href="#" class="btn">Read the Latest</a>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Ideas made real
+      </div>
+      <h1>
+        <span class="gradient">Ideas made real</span>
+      </h1>
+      <p>Future Flow brings ideas to life through strategy, design and content. We help brands tell real stories that connect.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn--primary">
+          Read the Latest
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#coverage" class="btn btn--secondary">
+          Explore Topics
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
     </div>
   </section>
 
-  <section class="section" id="coverage">
-    <h2>What We Cover</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>AI & Machine Learning</h3>
-        <p>Deep dives into the latest AI models, research breakthroughs, and practical applications transforming industries worldwide.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Blockchain & Web3</h3>
-        <p>Decentralized technology explained simply, from DeFi and NFTs to the infrastructure powering the next web.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Space & Biotech</h3>
-        <p>From CRISPR to SpaceX, we track the frontiers of science and engineering reshaping what's possible.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Future of Work</h3>
-        <p>Remote collaboration, AI-augmented careers, and the skills you need to thrive in a rapidly shifting economy.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3>What is Future-Flow</h3>
-        <p>Future-Flow is a daily media platform covering emerging technology, artificial intelligence breakthroughs, and the digital frontier. We break down complex innovations into clear, actionable insights for professionals and enthusiasts.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Who is Future-Flow for</h3>
-        <p>Tech professionals, investors, founders, and anyone who wants to stay ahead of the curve on emerging technology trends without drowning in jargon.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How often do you publish</h3>
-        <p>Daily. We publish fresh insights every weekday, with weekly roundups and deep-dive features on weekends. Subscribers also receive exclusive analysis directly to their inbox.</p>
+  <section class="coverage" id="coverage">
+    <div class="container">
+      <span class="section-label reveal">What We Cover</span>
+      <h2 class="section-title reveal">Explore the frontier</h2>
+      <p class="section-subtitle reveal">Deep dives into the technologies and trends shaping tomorrow — explained without the jargon.</p>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 2.7-1 5-2.7 6.7l-1.4-1.4A7 7 0 0 0 19 12a7 7 0 1 0-7 7v2A10 10 0 0 1 12 2z"/><path d="M12 6v6l3 2"/></svg>
+          </div>
+          <h3>AI & Machine Learning</h3>
+          <p>Latest AI models, research breakthroughs, and practical applications transforming industries worldwide.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+          </div>
+          <h3>Blockchain & Web3</h3>
+          <p>Decentralized technology explained simply, from DeFi and NFTs to the infrastructure powering the next web.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Space & Biotech</h3>
+          <p>From CRISPR to SpaceX, we track the frontiers of science and engineering reshaping what's possible.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3>Future of Work</h3>
+          <p>Remote collaboration, AI-augmented careers, and the skills you need to thrive in a rapidly shifting economy.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <h2>About Future Flow</h2>
-    <p>Future Flow brings ideas to life through strategy, design and content. We help brands tell real stories that connect.</p>
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Daily Readers</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Deep Dives Published</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Core Topics</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat-number">Daily</div>
+          <div class="stat-label">Fresh Insights</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-            <div class="social-posts">
-              <div class="social-post">
-                <h3>Future Flow</h3>
-                <p>Ideas made real. Strategy, design and content that helps brands connect. Follow Future Flow for more. Link in bio.</p>
-              </div>
-              <div class="social-post">
-                <h3>Creative Studio</h3>
-                <p>We bring ideas to life. Strategy, design and content for brands that want to connect. Follow us for the latest.</p>
-              </div>
+  <section class="social" id="social">
+    <div class="container">
+      <span class="section-label reveal">Community</span>
+      <h2 class="section-title reveal">From our feed</h2>
+      <p class="section-subtitle reveal">What the community is saying about Future Flow.</p>
+      <div class="social-grid">
+        <div class="social-card reveal reveal-delay-1">
+          <div class="social-card-header">
+            <div class="social-avatar">FF</div>
+            <div>
+              <div class="social-name">Future Flow</div>
+              <div class="social-handle">@futureflow</div>
             </div>
+          </div>
+          <p>Ideas made real. Strategy, design and content that helps brands connect. Follow Future Flow for more.</p>
+          <div class="social-card-footer">
+            <span>12 likes</span>
+            <span>2 comments</span>
+          </div>
+        </div>
+        <div class="social-card reveal reveal-delay-2">
+          <div class="social-card-header">
+            <div class="social-avatar">CS</div>
+            <div>
+              <div class="social-name">Creative Studio</div>
+              <div class="social-handle">@creativestudio</div>
+            </div>
+          </div>
+          <p>We bring ideas to life. Strategy, design and content for brands that want to connect.</p>
+          <div class="social-card-footer">
+            <span>8 likes</span>
+            <span>1 comment</span>
+          </div>
+        </div>
+        <div class="social-card reveal reveal-delay-3">
+          <div class="social-card-header">
+            <div class="social-avatar">TN</div>
+            <div>
+              <div class="social-name">Tech News Daily</div>
+              <div class="social-handle uppercase">@technewsdaily</div>
+            </div>
+          </div>
+          <p>Following Future Flow for the sharpest takes on AI and emerging tech. Essential daily reading.</p>
+          <div class="social-card-footer">
+            <span>24 likes</span>
+            <span>5 comments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <span class="section-label reveal">FAQ</span>
+      <h2 class="section-title reveal">Common questions</h2>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+            What is Future-Flow
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Future-Flow is a daily media platform covering emerging technology, artificial intelligence breakthroughs, and the digital frontier. We break down complex innovations into clear, actionable insights for professionals and enthusiasts.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+            Who is Future-Flow for
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Tech professionals, investors, founders, and anyone who wants to stay ahead of the curve on emerging technology trends without drowning in jargon.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+            How often do you publish
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Daily. We publish fresh insights every weekday, with weekly roundups and deep-dive features on weekends. Subscribers also receive exclusive analysis directly to their inbox.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <h2 class="reveal">Stay ahead of the curve</h2>
+      <p class="reveal reveal-delay-1">Get the latest insights on emerging tech delivered to your inbox. No noise, just signal.</p>
+      <a href="#" class="btn btn--primary reveal reveal-delay-2">
+        Subscribe Now
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025-2026 Future-Flow Media. Last updated: May 26, 2026.</p>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="docs/future-flow.html">Content Planner</a>
+    </div>
+    <p>&copy; 2025-2026 Future-Flow Media. All rights reserved.</p>
   </footer>
+
+  <script>
+    (function() {
+      // ---- Scroll-triggered reveals ----
+      const revealEls = document.querySelectorAll('.reveal');
+      if (revealEls.length) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+        );
+        revealEls.forEach(el => observer.observe(el));
+      }
+
+      // ---- FAQ accessibility ----
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const expanded = this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+          this.setAttribute('aria-expanded', expanded);
+        });
+      });
+
+      // ---- Close mobile nav on link click ----
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.getElementById('navLinks').classList.remove('open');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
